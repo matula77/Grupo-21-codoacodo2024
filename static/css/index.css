@@ -39,3 +39,19 @@ a {
     height: auto;
     float: left;
 }
+footer{
+    display: flex;
+    justify-content: center;    
+    clear: both;
+    padding: 10px;
+    margin: 15px;
+}
+#redes-sociales{
+    list-style: none;
+    justify-content: space-around;
+    margin: 15px;
+    padding: 5px;
+    
+
+
+}
