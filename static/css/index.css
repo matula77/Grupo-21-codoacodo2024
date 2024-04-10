@@ -14,20 +14,28 @@ h1 {
     color:#576994;
     background-color: grey;
 }
-li {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-    height: 2.5rem;
-    border-radius: .3rem;
-    overflow: hidden;
-    transition: all .3s ease;
 
-}
-nav{
+nav {
     display: block;
     justify-content: space-around;
+    
+}
+a {
+    text-decoration: none;
+    margin-left: 15px;
+    border-radius: 2px solid black;
+    height: 15px;
+    width: 8%;
+    line-height: 1.5;
+    float: left;
+}
+.tarjetas {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px;
+    border: 2px dotted black;
+    width: 20%;
+    height: auto;
+    float: left;
 }
