@@ -4,8 +4,30 @@
     box-sizing: border-box;
 
 }
-h1{
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(170, 169, 169);}
+
+h1 {
     text-align: center;
     font-size: 3em;
     color:#576994;
+    background-color: grey;
+}
+li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    height: 2.5rem;
+    border-radius: .3rem;
+    overflow: hidden;
+    transition: all .3s ease;
+
+}
+nav{
+    display: block;
+    justify-content: space-around;
 }
