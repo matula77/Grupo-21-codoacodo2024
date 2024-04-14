@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/index.css">
-    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/static/css/index.css"> -->
+    <link rel="stylesheet" href="/static/css/contacto.css">
+    <title>Contacto</title>
 </head>
 
 <body>
@@ -14,13 +15,56 @@
             <a href="/index.html">Menu</a>
             <a href="/sitio/Postres.html">Postres</a>
             <a href="/sitio/Sucursales.html">Sucursales</a>
-            <a href="#">Contacto</a>
+            <a href="/sitio/Contacto.html">Contacto</a>
             
         </nav>
     </header>
     <main>
-        <h1>Contactanos</h1>
-    </main>
+            <div class="formulario_container">
+                <h2 class="h2_form">Formulario de Contacto</h2>
+                <form id="contactForm" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="motivo">Motivo de Contacto:</label>
+                        <select id="motivo" name="motivo" required>
+                            <option value="">Seleccionar...</option>
+                            <option value="Consulta">Consulta</option>
+                            <option value="Ayuda">Ayuda</option>
+                            <option value="Reservar">Reservar</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sucursal">Sucursal:</label>
+                        <select id="sucursal" name="sucursal" required>
+                            <option value="">Seleccionar sucursal...</option>
+                            <option value="Sucursal Palermo">Sucursal Palermo</option>
+                            <option value="Sucursal Lanus">Sucursal Lanús</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="imagen">Subir Imagen (opcional):</label>
+                        <input type="file" id="imagen" name="imagen" accept="image/*">
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </main>
     <footer>
         <ul>
             <li><a href="https://www.youtube.com">Youtube</a></li>
