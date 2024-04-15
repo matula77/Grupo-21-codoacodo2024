@@ -175,3 +175,11 @@ button:hover {
     font-size: 14px;
     margin-top: 5px;
 }
+footer{
+    background-color: rgb(56, 72, 42);
+    color: #ffffff;
+    height: 150px;
+text-align: center;
+line-height: 150px;
+margin-top: 15px;
+}

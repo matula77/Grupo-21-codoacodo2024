@@ -9,6 +9,15 @@
     font-family: "Quattrocento Sans", sans-serif;
 }
 
+footer {
+    background-color: rgb(56, 72, 42);
+    color: #ffffff;
+    height: 100px;
+    text-align: center;
+    line-height: 150px;
+margin-top: 10px;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: rgb(254, 250, 224);
@@ -22,7 +31,8 @@ h1 {
     text-align: center;
     font-size: 3em;
     color: rgb(219, 212, 168);
-    background-color: rgb(95, 111, 82);;
+    background-color: rgb(95, 111, 82);
+    ;
 }
 
 li {
