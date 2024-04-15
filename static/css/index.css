@@ -9,6 +9,12 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: rgb(170, 169, 169);
 }
+.encabezado{
+    background-color: rgb(204, 29, 189);
+    color: black;
+    text-align: center;
+
+}
 
 h1 {
     text-align: center;
@@ -17,6 +23,35 @@ h1 {
     background-color: grey;
 }
 
+section {
+    border: 3px solid red;
+}
+
+footer {
+    border: 3px solid orange;
+}
+.container1{
+    background: url("/static/img/fondo-menu.jpeg") no-repeat fixed center;  
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    margin: 2% auto;
+    padding: 2%;
+    list-style: none;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+    column-count: 5;
+
+}
+
+ .container menu {
+    background-image: url("/static/img/fondo-menu.jpeg");
+    object-fit: fill;
+}
 
 nav {
     display: block;
@@ -35,34 +70,41 @@ a {
 }
 
 .tarjetas {
-    display: flex;
-    align-items:normal;
+    background-color: darkolivegreen;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-around;
     margin: 5px;
     border: 5px dotted black;
-    width: 10%;
-    height: 650px ;
-    box-shadow: 0 0 10px rgba(0,0,0,.15);
+    width: 15%;
+        height: 450px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
     transition: all .2s ease-in-out;
-    float: left;
+    float: inline-start;
 }
+
 .tarjetas img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
 
 
 }
-.tarjetas p h2 h3{
+
+.tarjetas p h2 h3 {
     text-align: justify;
     margin: 5px;
     margin-bottom: 5px;
-    text-align: end;
+
 }
 
 .tarjetas:hover {
-    width: 50%;
+    width: 35%;
     transition: all .5s ease-in-out;
+    align-items: center;
+    display: block;
+
 
 }
 
