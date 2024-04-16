@@ -8,6 +8,7 @@
     font-weight: 400;
     font-style: normal;
     font-family: "Quattrocento Sans", sans-serif;
+    
 }
 
 
@@ -16,22 +17,14 @@ body  {
     background-color: rgb(254, 250, 224);
 }
 
-title {
-    color: rgb(219, 212, 168);
-
-}
-.encabezado{
-    background-color: rgb(204, 29, 189);
-    color: black;
-    text-align: center;
-
-}
 
 h1 {
     text-align: center;
     font-size: 3em;
     color: rgb(219, 212, 168);
-    background-color: rgb(95, 111, 82);;
+    background-color: rgb(95, 111, 82);
+    margin-top: 10px;
+    padding: 5px;
 }
 
 li {
@@ -78,17 +71,14 @@ footer img{
 
 }
 
- .container menu {
-    background-image: url("/static/img/fondo-menu.jpeg");
-    object-fit: fill;
-}
-
 nav {
-    display: block;
-    justify-content: space-around;
-    max-width: 0 15;
+    display: flex;
+    justify-content: start;
+    width: 100%;
     padding: 5px;
-
+    height: 80px;
+    margin-right: 25px;
+    background-color: rgb(56, 72, 42);
 
 
 }
@@ -96,8 +86,6 @@ nav img{
     width: 75px;
     height: 75px;
 }
-
-
 a {
     text-decoration: none;
     margin-left: 15px;
@@ -110,9 +98,10 @@ a {
 
 
 .tarjetas {
-    display: flex;
+    
+    /* display: flex; */
     align-items:normal;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 5px;
     border: 5px dotted black;
     width: 15%;
@@ -120,6 +109,7 @@ a {
     box-shadow: 0 0 10px rgba(0, 0, 0, .15);
     transition: all .2s ease-in-out;
     float: inline-start;
+    overflow: hidden;
 }
 
 .tarjetas img {
@@ -150,9 +140,9 @@ header footer main {
     border: 2px solid red;
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin: 10% 15%;
     padding: 10px;
-    margin: 15px;
+    
 }
 
 #redes-sociales {
@@ -161,41 +151,41 @@ header footer main {
     margin: 15px;
     padding: 5px;
     display: flex;
-
-}.tarjetas img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-
-
-}
-.tarjetas p h2 h3{
-    text-align: justify;
-    margin: 5px;
-    margin-bottom: 5px;
-    text-align: end;
 }
 
-.tarjetas:hover {
-    width: 50%;
-    transition: all .5s ease-in-out;
 
+
+
+footer img{
+    width: 50px;
+    height: 50px;
 }
 
-header footer main {
-    border: 2px solid red;
+
+
+/* esto es otra forma de hacer las cards para los menus */
+/* .container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #F2EBDD;
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top: 10%;
-    padding: 10px;
-    margin: 15px;
 }
 
-#redes-sociales {
-    list-style: none;
-    justify-content: space-around;
-    margin: 15px;
-    padding: 5px;
-    display: flex;
-
+.cards {
+    margin: 0 30px;
+    height: 500px;
+    width: 250px;
+    background-color: #fff;
+    border: 5px solid black;
+    box-shadow: 0 0 0 7px #fff, 0 0 8px 5px #000;
 }
+.cards-imagen{
+    position: relative;
+    width: 100%;
+    border-bottom: 5px solid #000;
+    z-index: 1;
+    height: 55%;
+
+} */
