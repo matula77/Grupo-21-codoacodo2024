@@ -8,11 +8,11 @@
     font-weight: 400;
     font-style: normal;
     font-family: "Quattrocento Sans", sans-serif;
-    
+
 }
 
 
-body  {
+body {
     font-family: 'Roboto', sans-serif;
     background-color: rgb(254, 250, 224);
 }
@@ -43,21 +43,24 @@ li {
 
 section {
     border: 3px solid red;
+    display: flex;
 }
 
 footer {
     border: 3px solid orange;
     height: auto;
     align-items: center;
-    
+
 }
-footer img{
+
+footer img {
     width: 35px;
     height: 35px;
 }
+
 .container {
     display: flex;
-    flex:1 0 200px;
+    flex: 1 0 200px;
     justify-content: center;
     align-items: center;
     max-width: 100%;
@@ -82,10 +85,12 @@ nav {
 
 
 }
-nav img{
+
+nav img {
     width: 75px;
     height: 75px;
 }
+
 a {
     text-decoration: none;
     margin-left: 15px;
@@ -98,9 +103,9 @@ a {
 
 
 .tarjetas {
-    
+
     /* display: flex; */
-    align-items:normal;
+    align-items: normal;
     justify-content: space-between;
     margin: 5px;
     border: 5px dotted black;
@@ -126,12 +131,30 @@ a {
     margin-bottom: 5px;
 
 }
+.tarjetas:nth-child(even) {
+    translate: 0 20px;
 
+}
+.tarjetas:nth-child(odd) {
+    translate: 0 -20px;
+
+}
+
+
+.tarjetas:not(:hover) {
+    filter: grayscale(100%);
+}
+
+/* .tarjetas:hover {
+    flex: 3;
+
+} */
 .tarjetas:hover {
-    width: 35%;
-    transition: all .5s ease-in-out;
-    align-items: center;
-    display: block;
+    /* width: 35%; */
+    /* transition: all .5s ease-in-out; */
+    /* align-items: center; */
+    /* display: block; */
+    flex: 3;
 
 
 }
@@ -142,7 +165,7 @@ header footer main {
     justify-content: center;
     margin: 10% 15%;
     padding: 10px;
-    
+
 }
 
 #redes-sociales {
@@ -156,11 +179,70 @@ header footer main {
 
 
 
-footer img{
+footer img {
     width: 50px;
     height: 50px;
 }
 
+.card1 {
+    border-radius: 50px;
+    border: 1px double black;
+    flex: 1;
+    width: 50%;
+    height: 50%;
+    transition: all 400ms;
+    cursor: pointer;
+    align-items: center;
+    justify-items: center;
+}
+.tarjetas {
+    border-radius: 50px;
+    border: 1px double black;
+    flex: 1;
+    width: 50%;
+    height: 50%;
+    transition: all 400ms;
+    cursor: pointer;
+    align-items: center;
+    justify-items: center;
+}
+.card1:nth-child(odd) {
+    translate: 0 -20px;
+
+}
+
+.card1:nth-child(even) {
+    translate: 0 20px;
+
+}
+
+
+.card1:not(:hover) {
+    filter: grayscale(100%);
+}
+
+.card1:hover {
+    flex: 3;
+
+}
+
+.container-card {
+    border: 3px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1.25rem; */
+    transition: all 400ms;
+
+}
+
+.container-card img {
+    width: 100px;
+    height: 80px;
+    border: 1px solid black ;
+    border-radius: 15px;
+
+}
 
 
 /* esto es otra forma de hacer las cards para los menus */

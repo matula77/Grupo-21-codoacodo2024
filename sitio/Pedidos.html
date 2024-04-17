@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/pedidos.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <a href="/index.html"><img src="/static/img/iconos/menu.png" alt="Menu"></a>
+            <a href="../sitio/Postres.html"><img src="/static/img/iconos/postres.png" alt="Postres"
+                    placeholder="Postres"></a>
+            <a href="../sitio/Sucursales.html"><img src="/static/img/iconos/travel_restaurant_adventure_icon_181434.png"
+                    alt="Sucursales"></a>
+            <a href="../sitio/Contacto.html"><img src="/static/img/iconos/contacto.png" alt="Contacto"></a>
+            <a href="#"><img src="/static/img/iconos/delivery.png" alt="delivery"></a>
+
+        </nav>
+    </header>
+    <main>
+        <h2>Realizar Pedido</h2>
+        <fieldset >
+            <legend>Información del Cliente:</legend>
+            <div class="form">
+                <div class="contenido">
+
+                    <label for="datos-cliente">Ingrese Apellido Nombre</label>
+                    <input type="text" name="datos-clientes" id="" required><br>
+                    <label for="domicilio-cliente">Ingrese Domicilio</label>
+                    <input type="text" name="domicilio-cliente" required><br>
+                    <label for="telefono" name="telefono-cliente">Ingrese su Telefono </label>
+                    <input type="telefono" name="telefono-cliente" required placeholder="Ingrese solo numeros sin -15-">
+                    
+                    
+                </fieldset>
+                <fieldset>
+
+                        <label for="text" name="pedido">Seleccione su pedido </label>
+                        <!-- <input type="text" name="pedido" id="pedido" placeholder="Seleccione su pedido "> -->
+                        <ul class="listado-productos">
+                            <select name="menu1" id="menu1">
+                                <option value="Menu1">Menu 1 Diario</option>
+                                <option value="Menu2">Menu 2 Diario</option>
+                                <option value="Menu3">Menu 3 Diario</option>
+                                <option value="Menu4">Menu 4 Diario</option>
+                                <option value="Menu5">Menu 5 Diario</option>
+                            </select>
+                            <select name="pastas" id="pastas">
+                                <option value="pastas1">Pastas 1 </option>
+                                <option value="pastas2">Pastas 2 </option>
+                                <option value="pastas3">Pastas 3 </option>
+                                <option value="pastas4">Pastas 4 </option>
+                                <option value="pastas5">Pastas 5 </option>
+                            </select>
+                            <select name="rapidas1" id="comidasrapidas">
+
+                                <option value="Comidas Rapidas1">Comidas Rapidas1</option>
+                                <option value="Comidas Rapidas2">Comidas Rapidas2</option>
+                                <option value="Comidas Rapidas3">Comidas Rapidas3</option>
+                                <option value="Comidas Rapidas4">Comidas Rapidas4</option>
+                                <option value="Comidas Rapidas5">Comidas Rapidas5</option>
+                            </select>
+                            <select name="bebidas" id="">
+                                <option value="bebidas1">Bebidas1</option>
+                                <option value="bebidas2">Bebidas2</option>
+                                <option value="bebidas3">Bebidas3</option>
+                                <option value="bebidas4">Bebidas4</option>
+                                <option value="bebidas5">Bebidas5</option>
+                            </select>
+                            <select name="postres" id="">
+
+                                <option value="Tortas">Tortas</option>
+                                <option value="Helados">Helados</option>
+                                <option value="Bocadillos">Bocadillos</option>
+                            </select>
+                            <li>Cantidad de Productos : <input type="number" min="0" maxlength="3"
+                                    onkeypress='return event.charCode >= 48 && event.charCode <=57'></li>
+
+                            <button  onclick="agregarProducto()"><img src="/static/img/iconos/carrito.png" alt="agregar" width="45px" height="45px"></button>
+                        </ul>
+
+                        <label for=""></label>
+                        <input type="text">
+                    </fieldset>
+                </div>
+                
+        </fieldset>
+        <fieldset class="pago">
+            <legend>Formas de Pago</legend>
+            <div class="forma-de-pago">
+                <input type="checkbox" name="tarjeta" id="tarjeta"><label for="tarjeta"> Tarjeta </label>
+                <input type="checkbox" name="efectivo" id="efectivo"><label for="efectivo"> Efectivo </label>
+                <input type="checkbox" name="trasferencia" id="transferencia"><label for="trasferencia"> transferencia </label>
+
+            </div>
+        </fieldset>
+
+        </div>
+
+    </main>
+    <div class="envped">
+
+        <h3>Enviar Pedido</h3>
+    </div>
+    <footer>
+        <h2 align="center">Contactanos por nuestras redes sociales </h2>
+        <nav id="redes-sociales">
+
+            <a href="https://www.youtube.com"><img src="/static/img/iconos/social_youtube_23.png" alt=""></a>
+            <a href="https://www.Instagram.com/"><img src="/static/img/iconos/instagram_black_logo_icon_147122.png"
+                    alt=""></a>
+            <a href="https://twitter.com/?lang=es"><img
+                    src="/static/img/iconos/twitter_x_new_logo_x_rounded_icon_256078.png" alt=""></a>
+            <a href="mailto:nombrecorreo@gmail.com"><img
+                    src="/static/img/iconos/mail-black-envelope-symbol_icon-icons.com_56519.png" alt=""></a>
+            <a href=" https://wa.me/15551234567"><img src="/static/img/iconos/whatsapp_black_logo_icon_147050.png"
+                    alt=""></a>
+
+
+        </nav>
+    </footer>
+
+</body>
+
+</html>
